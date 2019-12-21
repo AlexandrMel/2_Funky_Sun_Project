@@ -1,0 +1,417 @@
+/* CSS Reset */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
+body { line-height: 1;}
+ol,ul { list-style: none;}
+blockquote,q { quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
+table { border-collapse: collapse; border-spacing: 0;}
+
+/* Flexing the page */
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+
+
+}
+/* Main Container */
+.container {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  transform-origin: center center;
+  background: transparent;
+  /* animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+
+/* The Push Me button */
+.push_me {
+  height: 90px;
+  width: 90px;
+  border: 8px solid red;
+  border-radius: 90px;
+  position: absolute;
+  transform-origin: center center;
+  top: 255px;
+  left: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 2;
+}
+
+#push_text {
+  font-size: 18px;
+  font-weight: 800;
+  color: red;
+}
+/* The first smallest Circle */
+.big_square {
+  width: 120px;
+  height: 120px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 240px;
+  left: 240px;
+  background: transparent;
+
+}
+/* The second Circle */
+.big_square2 {
+  width: 160px;
+  height: 160px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 220px;
+  left: 220px;
+  background: transparent;
+
+}
+/* The third Circle */
+.big_square3 {
+  width: 200px;
+  height: 200px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  background: transparent;
+
+}
+/* The forth Circle */
+.big_square4 {
+  width: 240px;
+  height: 240px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  background: transparent;
+
+}
+/* The fifth Circle */
+.big_square5 {
+  width: 280px;
+  height: 280px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 160px;
+  left: 160px;
+  background: transparent;
+
+}
+/* The sixth Circle */
+.big_square6 {
+  width: 320px;
+  height: 320px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  background: transparent;
+
+}
+/* The seventh Circle */
+.big_square7 {
+  width: 360px;
+  height: 360px;
+  transform-origin: center center;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  background: transparent;
+
+}
+/* The triangle form */
+.triangle {
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 0;
+  border-right: 20px solid green;
+  background: transparent;
+  border-radius: 0;
+  transform: 0;
+  transition: 0.5s;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* The square form */
+.square {
+  transition: 0.5s;
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: blue;
+  border-radius: 0;
+  transform: 0;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* The half1_square form */
+.half1_square {
+  transition: 0.5s;
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid red;
+  border-right: 20px solid transparent;
+  border-bottom: 0;
+  border-left: 0;
+  background: transparent;
+  border-radius: 0;
+  transform: 0;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* The half2_square form */
+.half2_square {
+  transition: 0.5s;
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid green;
+  border-left: 20px solid transparent;
+  border-top: 0;
+  border-right: 0;
+  background: transparent;
+  border-radius: 0;
+  transform: 0;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* The circle form */
+.circle {
+  transition: 0.5s;
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 20px;
+  background: purple;
+  transform: 0;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* The trapez form */
+.trapez {
+  transition: 0.5s;
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  border-left: 16px solid yellow;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-bottom: 0;
+  height: 16px;
+  width: 0;
+  background: transparent;
+  border-radius: 0;
+  transform: 0;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* The retangle form */
+.retangle {
+  transition: 0.5s;
+  position: absolute;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 14px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 0;
+  transform: skew(20deg);
+  background: red;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Rotate 15 deg the big Square */
+.rot1 {
+  transform: rotate(15deg);
+}
+/* Rotate 30 deg the big Square */
+.rot2 {
+  transform: rotate(30deg);
+}
+/* Rotate 45 deg the big Square */
+.rot3 {
+  transform: rotate(45deg);
+}
+/* Rotate 60 deg the big Square */
+.rot4 {
+  transform: rotate(60deg);
+}
+/* Rotate 75 deg the big Square */
+.rot5 {
+  transform: rotate(75deg);
+}
+/* Rotate 90 deg the big Square */
+.rot6 {
+  transform: rotate(90deg);
+}
+/* Rotate 105 deg the big Square */
+.rot7 {
+  transform: rotate(105deg);
+}
+/* Rotate 120 deg the big Square */
+.rot8 {
+  transform: rotate(120deg);
+}
+/* Rotate 135 deg the big Square */
+.rot9 {
+  transform: rotate(135deg);
+}
+/* Rotate 150 deg the big Square */
+.rot10 {
+  transform: rotate(150deg);
+}
+/* Rotate 165 deg the big Square */
+.rot11 {
+  transform: rotate(165deg);
+}
+/* Rotate 180 deg the big Square */
+.rot12 {
+  transform: rotate(180deg);
+}
+/* Rotate 195 deg the big Square */
+.rot13 {
+  transform: rotate(195deg);
+}
+/* Rotate 210 deg the big Square */
+.rot14 {
+  transform: rotate(210deg);
+}
+/* Rotate 225 deg the big Square */
+.rot15 {
+  transform: rotate(225deg);
+}
+/* Rotate 240 deg the big Square */
+.rot16 {
+  transform: rotate(240deg);
+}
+/* Rotate 255 deg the big Square */
+.rot17 {
+  transform: rotate(255deg);
+}
+/* Rotate 260 deg the big Square */
+.rot18 {
+  transform: rotate(270deg);
+}
+/* Rotate 285 deg the big Square */
+.rot19 {
+  transform: rotate(285deg);
+}
+/* Rotate 300 deg the big Square */
+.rot20 {
+  transform: rotate(300deg);
+}
+/* Rotate 315 deg the big Square */
+.rot21 {
+  transform: rotate(315deg);
+}
+/* Rotate 330 deg the big Square */
+.rot22 {
+  transform: rotate(330deg);
+}
+/* Rotate 345 deg the big Square */
+.rot23 {
+  transform: rotate(345deg);
+}
+
+/* The spining animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* The Push Me animation */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
